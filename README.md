@@ -1,4 +1,4 @@
-# Physics-Informed Neural Network for the 2D Lid-Driven Cavity Flow
+# PINN for the 2D Lid-Driven Cavity Flow
 
 ## Introduction  
 
