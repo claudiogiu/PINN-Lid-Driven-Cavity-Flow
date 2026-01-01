@@ -27,6 +27,13 @@ To set up the repository properly, follow these steps:
   - `optimizer.py`: Provides the training loop, performing loss evaluation, backpropagation, and parameter updates.
   - `main.py`: Runs the PINN implementation and stores the resulting model in the `models/` directory.
 
+- Run the following command to execute the full workflow:
+
+  ```bash
+  cd src
+  python -m main
+  ```
+
 
 ## License  
 
