@@ -19,13 +19,13 @@ To set up the repository properly, follow these steps:
   source .venv/bin/activate  # On Windows use: .venv\Scripts\activate 
   ```
 
-**2.** **Build and Train the PINN**  
+**2.** **Run the PINN Implementation**  
 
-- The `src/` folder contains the modular components to build and train the PINN:
-  - `network.py`: Defines the neural architecture used to approximate the velocity and pressure fields. 
+- The `src/` folder contains the modular components of the PINN implementation:
+  - `network.py`: Defines the neural architecture that maps spatial coordinates to the corresponding streamfunction and pressure fields. 
   - `pinn.py`: Implements the PINN, including the Navier–Stokes residuals and boundary condition enforcement.  
-  - `optimizer.py`: Implements the optimization strategy, including learning rate, scheduler, and training parameters.
-  - `main.py`: Trains the PINN and saves it to the `models/` directory.
+  - `optimizer.py`: Provides the training loop, performing loss evaluation, backpropagation, and parameter updates.
+  - `main.py`: Runs the PINN implementation and stores the resulting model in the `models/` directory.
 
 
 ## License  
