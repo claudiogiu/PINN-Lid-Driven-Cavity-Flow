@@ -1,0 +1,9 @@
+[project]
+name = "PINN-Lid-Driven-Cavity-Flow"
+version = "0.1.0"
+description = "Physics-Informed Neural Network formulation with Finite Difference Method reference solution for the 2D lid-driven cavity flow."
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.4.0",
+    "torch>=2.9.1",
+]
