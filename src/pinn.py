@@ -11,7 +11,7 @@ class LidDrivenCavityPINN:
     pressure formulation.
 
     Attributes:
-        model (nn.Module): Neural network implementing (x, y) → (psi, p).
+        model (nn.Module): Neural network implementing the mapping (x, y) to (psi, p).
         domain (Tuple[float,float,float,float]): Physical domain (xmin,xmax,ymin,ymax).
         Re (float): Reynolds number.
         U0 (float): Lid velocity at the top boundary.
@@ -24,7 +24,7 @@ class LidDrivenCavityPINN:
 
     Methods:
         compute_loss(n_interior, n_boundary):
-            Computes total loss and its PDE/BC components.
+            Computes the total loss together with the PDE and boundary-condition components.
 
         save_model(path: str):
             Saves the neural network weights to the specified path.
