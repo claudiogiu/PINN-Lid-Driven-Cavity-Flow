@@ -153,3 +153,8 @@ class LidDrivenCavityFDM:
         v[self.i, self.j] = -(psi[self.ip, self.j] - psi[self.im, self.j]) / (2 * self.h)
 
         return u, v
+    
+
+if __name__ == "__main__":
+    solver: LidDrivenCavityFDM = LidDrivenCavityFDM()
+    results: Dict[str, np.ndarray] = solver.solve()

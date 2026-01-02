@@ -1,12 +1,9 @@
 import time
-import warnings
 from typing import Any, Callable, Dict, Optional
 import torch
 from torch import nn
 from torch.optim import Optimizer as TorchOptimizer
 from torch.optim.lr_scheduler import _LRScheduler
-
-warnings.filterwarnings("ignore")
 
 class Optimizer:
     """

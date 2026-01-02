@@ -1,9 +1,6 @@
-import warnings
 from typing import Tuple
 import torch
 import torch.nn as nn
-
-warnings.filterwarnings("ignore")
 
 class Network(nn.Module):
     """

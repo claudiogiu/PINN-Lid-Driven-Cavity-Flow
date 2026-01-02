@@ -1,11 +1,8 @@
 import os
 import torch
-import warnings
 import torch.nn as nn
 import torch.nn.functional as F
 from typing import Tuple, Dict, Any
-
-warnings.filterwarnings("ignore")
 
 class LidDrivenCavityPINN:
     """
