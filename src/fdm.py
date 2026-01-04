@@ -21,6 +21,8 @@ class LidDrivenCavityFDM:
         dt (float): Time step for pseudo-time iteration.
         max_iter (int): Maximum number of iterations for steady-state convergence.
         tol (float): Convergence tolerance based on the L-infinity norm of vorticity updates.
+        im, i, ip (slice): Index slices for backward, central, and forward finite-difference stencils along x.
+        jm, j, jp (slice): Index slices for backward, central, and forward finite-difference stencils along y.
 
     Methods:
         __post_init__() -> None:
