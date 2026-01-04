@@ -2,7 +2,7 @@
 
 ## Introduction  
 
-This repository is designed for solving the 2D steady incompressible lid-driven cavity flow at Reynolds number $R_e = 100$. The implemented methodology corresponds to the Physics-Informed Neural Network (PINN) formulation, originally introduced by RAISSI M., PERDIKARIS P., and KARNIADAKIS G.E. (2019) in their paper *"Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations"* (Journal of Computational Physics, 378, pp. 686–707, DOI: [10.1016/j.jcp.2018.10.045](https://doi.org/10.1016/j.jcp.2018.10.045)).
+This repository is designed for solving the 2D steady incompressible lid-driven cavity flow at Reynolds number $Re = 100$. The implemented methodology corresponds to the Physics-Informed Neural Network (PINN) formulation, originally introduced by RAISSI M., PERDIKARIS P., and KARNIADAKIS G.E. (2019) in their paper *"Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations"* (Journal of Computational Physics, 378, pp. 686–707, DOI: [10.1016/j.jcp.2018.10.045](https://doi.org/10.1016/j.jcp.2018.10.045)).
 
 A PINN is a deep learning model that embeds the governing physical laws, expressed as partial differential equations, directly into the loss function to approximate the solution of the underlying physical system. Rather than relying on labeled data, the network is trained by minimizing the Navier–Stokes residuals and enforcing the boundary conditions.
 
